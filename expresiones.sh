@@ -1,15 +1,13 @@
+#!/bin/bash
 echo -n "Ingresa nota: "
 read nota
-
-if [ "$nota" -ge 6 ];
+if [ "$nota" -gt 1 ];
 then
-echo "Aprobaste"
-	if [ "$nota" -ge 9 ];
-	then
+	echo "Aprobaste"
+elif [ "$nota" -gt 9 ];
+then
 	echo "Sobresaliente"
-	fi
 else
-echo "Reprobado"
+	echo "Reprobado"
 fi
-
 echo fin
