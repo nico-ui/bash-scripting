@@ -4,6 +4,7 @@ read valor
 if [ "$valor" -lt "10" ]; then 
 	if [ "$valor" -gt "1" ]; then
 		echo "$valor dentro del rango"
+		echo "$valor*$valor=$(($valor*$valor))"
 	else
 		echo "$valor fuera del rango"
 	fi
