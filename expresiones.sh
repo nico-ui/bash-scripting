@@ -1,9 +1,13 @@
 #!/bin/bash
-echo -n "Ingresa usuario: "
-read user
-if [ "$user" = "$USER" ]; then
-	echo "Bienvenido $user"
+echo -n "Ingresa un valor 1<x<10: "
+read valor
+if [ "$valor" -lt "10" ]; then 
+	if [ "$valor" -gt "1" ]; then
+		echo "$valor dentro del rango"
+	else
+		echo "$valor fuera del rango"
+	fi
 else
-	echo "tu no eres $USER"
+	echo "$valor fuera de rango"
 fi
-echo fin
+echo fin del programa
