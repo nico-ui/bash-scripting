@@ -1,14 +1,11 @@
 #!/bin/bash
-echo -n "Ingresa un valor 1<x<10: "
-read valor
-if [ "$valor" -lt "10" ]; then 
-	if [ "$valor" -gt "1" ]; then
-		echo "$valor dentro del rango"
-		echo "$valor*$valor=$(($valor*$valor))"
-	else
-		echo "$valor fuera del rango"
-	fi
+echo -n "Ingresa tu nombre: "
+read nombre
+echo -n "Ingresa tu edad: "
+read edad
+if [ "$edad" -gt "18" ]; then
+	echo "$nombre eres mayor de edad"
 else
-	echo "$valor fuera de rango"
+	echo "$nombre eres menor de edad"
 fi
 echo fin del programa
