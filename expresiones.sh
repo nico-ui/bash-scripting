@@ -1,11 +1,12 @@
 #!/bin/bash
-echo -n "Ingresa tu nombre: "
-read nombre
-echo -n "Ingresa tu edad: "
-read edad
-if [ "$edad" -gt "18" ]; then
-	echo "$nombre eres mayor de edad"
+echo -n "Ingresa numero 1: "
+read num1
+echo -n "Ingresa numero 2: "
+read num2
+if [ "$num2" != 0 ]; then
+	let division=num1/num2
+	echo $division
 else
-	echo "$nombre eres menor de edad"
+	echo "$num2 no puede ser cero"
 fi
-echo fin del programa
+echo fin
