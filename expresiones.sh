@@ -1,13 +1,9 @@
 #!/bin/bash
-echo -n "Ingresa nota: "
-read nota
-if [ "$nota" -gt 1 ];
-then
-	echo "Aprobaste"
-elif [ "$nota" -gt 9 ];
-then
-	echo "Sobresaliente"
+echo -n "Ingresa usuario: "
+read user
+if [ "$user" = "$USER" ]; then
+	echo "Bienvenido $user"
 else
-	echo "Reprobado"
+	echo "tu no eres $USER"
 fi
 echo fin
