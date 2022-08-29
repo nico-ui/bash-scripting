@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Recorrido de for"
-for x in 1 2 3 
+echo "Recorrido de for de String"
+for x in papel lapiz tigera 
 do
 	echo $x
 	sleep 1
