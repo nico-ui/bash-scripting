@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Par o impar"
-echo -n "Ingresa un numero: "; read x
-if [ "$(($x%2))" -eq 0 ]; then
-	echo "Numero par"
+echo -n "Ingresa contrasena: "; read x
+contra="arbol"
+if [ "$x" = "$contra" ]; then
+	echo "Bienvenido"
 else
-	echo "Numero impar"
+	echo "Acceso denegado"
 fi
