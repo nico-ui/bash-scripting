@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Recorrido de for palabras"
-for x in "hola mundo" "esto es" "una prueba"
+echo "Recorrido de for contenido directorio"
+for x in *
 do
-	echo "El valor de x es: $x"
+	ls -l $x
 	sleep 1
 done
