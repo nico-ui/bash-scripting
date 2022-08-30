@@ -1,9 +1,6 @@
 #!/bin/bash
-echo "Recorrido de for array con bucle"
-array=(perro gato lapiz)
-for x in ${array[*]}
-do
-	echo $x
-	sleep 1
+echo "for tipo C"
+echo -n "Ingresa el num de elementos: "; read tam
+for (( i=0; i<$tam; i=i+1 )); do
+	echo $i
 done
-echo "Hay ${#array[*]} elementos en el array"
