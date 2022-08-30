@@ -1,18 +1,8 @@
 #!/bin/bash
-echo "Paradoja"
-ruta="C:/Users/XMX1283/Documents/Cursos/bash/output.txt"
-if [ -f $ruta ]; then 
-	echo $ruta
-	echo "file existe"
-	sleep 1
-else
-	echo $ruta
-	echo "file no existe"
-	touch $ruta
-	sleep 1
-fi
-for x in {1..57}; do
-	echo $(($RANDOM%365)) >> $ruta	
+echo "Estructura while"
+echo -n "Ingresa tam: "; read tam
+let i=0
+while [ $i -le $tam ]; do
+	echo $i
+	let i=$i+1
 done
-sort $ruta
-rm $ruta
