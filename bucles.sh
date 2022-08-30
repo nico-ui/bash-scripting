@@ -6,3 +6,4 @@ do
 	echo $x
 	sleep 1
 done
+echo "Hay ${#array[*]} elementos en el array"
