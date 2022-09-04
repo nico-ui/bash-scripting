@@ -1,5 +1,7 @@
 #!/bin/bash
 function saludo(){
-	echo "Hola"
+	echo "Hola $1"
 }
-saludo
+echo -n "Ingresa tu nombre: "
+read nombre
+saludo $nombre
