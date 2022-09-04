@@ -1,14 +1,10 @@
-#/bin/bash
-function addnum(){
-	if [ $# -gt 2 ] ; then 
-		echo "Cantidad de parametros incorrectos"
-	else
-		echo $(($1+$2))
-	fi
+#!/bin/bash
+function suma(){
+	echo "Resultado de suma: " $(($1 + $2 + $3 + $4))
 }
-echo "Agregando 10 15: "
-valor=$(addnum 10 15)
-echo $valor
-echo "Agreagando 10 15 20: "
-valor=$(addnum 10 15 20)
-echo $valor
+if [ $# -eq 4 ]; then
+	valor=$(suma $1 $2 $3 $4)
+	echo $valor
+else
+	echo "Opcion incorrecta, Ingrese parametros como: myFunction a b c d"
+fi
