@@ -2,4 +2,4 @@
 function saludo(){
 	echo "Hola"
 }
-echo $(saludo)
+saludo
