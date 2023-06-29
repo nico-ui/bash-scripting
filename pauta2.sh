@@ -13,6 +13,8 @@ if [ "${1##*.}" = "jpg" ]; then
                 echo no se encontro archivo
         fi
         cd
+	mkdir fotos
+	cd fotos
         cp $archivo .
 else
         echo No es opcion valida
