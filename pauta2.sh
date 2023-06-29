@@ -14,7 +14,23 @@ if [ "${1##*.}" = "jpg" ]; then
         fi
         cd
 	mkdir fotos
-	cd fotos
+	cd fif [ "${1##*.}" = "jpg" ]; then
+        echo extension igual a jpg
+        var1=$(pwd)
+        archivo="$var1/$1"
+        echo archivo: $archivo
+        if [ -f $archivo ]; then
+                echo si existe
+        else
+                echo no se encontro archivo
+        fi
+        cd
+        mkdir fotos
+        cd fotos
+        cp $archivo .
+else
+        echo No es opcion valida
+fiotos
         cp $archivo .
 else
         echo No es opcion valida
