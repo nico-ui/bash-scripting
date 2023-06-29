@@ -4,9 +4,16 @@
 #2. logica
 if [ "${1##*.}" = "jpg" ]; then
         echo extension igual a jpg
-        pwd
+        var1=$(pwd)
+        archivo="$var1/$1"
+        echo archivo: $archivo
+        if [ -f $archivo ]; then
+                echo si existe
+        else
+                echo no se encontro archivo
+        fi
         cd
-        pwd
+        cp $archivo .
 else
         echo No es opcion valida
 fi
